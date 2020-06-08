@@ -1,0 +1,10 @@
+{
+	"author": "HLSiira",
+	"version": "2.0",
+	"name": "Atheos Outline",
+	"url": "https://github.com/SmartBlug/Codiad-Outline",
+	"bottombar": [{
+		"admin": false,
+		"html": "<a id=\"Outline\">Outline</a>"
+	}]
+}
