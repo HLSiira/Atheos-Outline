@@ -19,7 +19,7 @@
 			this.init = __bind(this.init, this);
 			var _this = this;
 			this.atheos = global.atheos;
-			this.amplify = global.amplify;
+			this.carbon = global.carbon;
 			this.jQuery = jQuery;
 			this.scripts = document.getElementsByTagName('script');
 			this.path = this.scripts[this.scripts.length - 1].src.split('?')[0];
@@ -77,24 +77,24 @@
 				}
 			});
 
-			this.amplify.subscribe('active.onFocus', function() {
+			this.carbon.subscribe('active.onFocus', function() {
 				return _this.updateOutline();
 			});
-			this.amplify.subscribe('active.onSave', function() {
+			this.carbon.subscribe('active.onSave', function() {
 				return _this.updateOutline();
 			});
-			this.amplify.subscribe('active.onClose', function() {
+			this.carbon.subscribe('active.onClose', function() {
 				return _this.$Outline.empty();
 			});
 			this.updateInterval = null;
-			this.amplify.subscribe('active.onOpen', function() {
+			this.carbon.subscribe('active.onOpen', function() {
 				//_this.updateOutline();
 				/*return _this.atheos.editor.getActive().getSession().on('change', function(e) {
 				  clearTimeout(_this.updateInterval);
 				  return _this.updateInterval = setTimeout(_this.updateOutline, 1000);
 				});  */
 			});
-			return this.amplify.subscribe('active.onClose', function() {
+			return this.carbon.subscribe('active.onClose', function() {
 				return _this.disableOutline();
 			});
 		};
